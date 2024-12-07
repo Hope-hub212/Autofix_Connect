@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('{% static "images/bg2.png" %}');
+      background-size:cover;
+      background-repeat: no-repeat;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+    h3{
+        font-weight: bolder;
+        font-family: "Britannic Bold";
+    }
+  </style>
+
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  {% include "vehicle/navbar.html" %}
+  <br><br>
+  <div class="jumbotron" style="margin-bottom:0px;">
+    <h3 class="display-4 text-center text-white fw-bold">Welcome to Autofix_Connect </h3>
+      <h4 class="fw-bold text-light">Your trusted mechanic partner</h4>
+    <p class="lead text-white fw-bold">Finding a reliable mechanic has never been easier. Whether you are in a new area or your local neighbourhood, our platform connects you with trusted, skilled mechanics nearby.
+        <br>Simply create an account browse through verified professionals, and book the help you need-all in just a few clicks.
+        <br>Your convenience and vehicle's care are our priority</p>
+      
+    <hr class="my-4">
+    <h4 class="text-white"> Get your car fixed,<br>Anytime, Anywhere!</h4>
+      <style>
+          h4{
+              text-align: center;
+          }
+          
+      </style>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="customersignup" role="button">Create Your Account</a>
+      <a class="btn btn-primary btn-lg" href="customerlogin" role="button">Login</a>
+    </p>
+  </div>
+  {% include "vehicle/footer.html" %}
+</body>
+
+</html>

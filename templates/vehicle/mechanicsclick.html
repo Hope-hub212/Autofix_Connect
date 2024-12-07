@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('{% static "images/bg45.png" %}');
+      background-size:cover;
+      background-repeat: no-repeat;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  {% include "vehicle/navbar.html" %}
+  <br><br>
+  <div class="jumbotron" style="margin-bottom:0px;">
+    <h1 class="display-4 text-white fw-bold">Hello, Mechanics</h1>
+    <p class="lead text-white">Welcome to Autofix_Connect <br>Join today and connect with customers who need your expertise! <br>Sign in to show case your skills, grow your client base, and get hired faster.
+        <br>Don't miss out on this opportunity to make your services more accessible!</p>
+    <hr class="my-4">
+    <p class="text-white fw-bold">Register now and start building your reputation!</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="mechanicsignup" role="button">Apply For Job</a>
+      <a class="btn btn-primary btn-lg" href="mechaniclogin" role="button">Login</a>
+    </p>
+  </div>
+  {% include "vehicle/footer.html" %}
+</body>
+
+</html>
